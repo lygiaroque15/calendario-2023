@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+.calendario {
+  background-color: black;
+  color: aliceblue;
+  width: 450px;
+  height: 520px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.mes {
+  width: 100%;
+  height: 120px;
+  background-color: slateblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mes h1 {
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.mes p {
+  font-size: 15px;
+}
+
+.dias-da-semana {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: aliceblue;
+  color: slateblue;
+}
+
+.dias-da-semana div {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.datas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+
+.datas div {
+  font-size: 14px;
+  margin: 3px;
+  width: 57.5px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.datas div:hover:not(.empty) {
+  border: 2px solid aliceblue;
+}
+
+.hoje {
+  background-color: slateblue;
+}
